@@ -1,0 +1,26 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <link href="{% static 'FontAwesome/css/all.min.css' %}" rel="stylesheet" />
+
+  </head>
+  <body style="background-color: #185065;">
+
+    {% block body %}
+    {% endblock body %}
+
+    <script src="{% static 'js/sweetalert.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bundle.min.js' %}"></script>
+    <script src="{% static 'FontAwesome/js/all.min.js' %}"></script>
+    
+  </body>
+</html>
